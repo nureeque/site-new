@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Түркістан облысының адами әлеуетті дамыту басқармасы</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../../style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+	<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+</head>
+<body>
+<div class="lang">
+	<div class="langli" style="padding-right: 10px;"><a href="">Қаз</a></div>
+	<div class="langli"><a href="">Рус</a></div>
+</div>
+<div class="header">
+	<h1 style="text-align: center;">Түркістан облысының адами әлеуетті дамыту басқармасы</h1>
+</div>
+<!--Navbar-->
+<div id="navbar">
+  <a href="../basqarma.html">Басқарма</a>
+  <a href="../bilim.html">Білім</a>
+  <a href="../malimetter.html">Мәліметтер</a>
+  <a href="../baspasoz.html">Баспасөз</a>
+  <a href="../bailanys.html">Байланыс</a>
+  <a href="../../index.html" style="float: right;"><i class='fas fa-home' id="icon" style='font-size:26px;'></i></a>
+</div>
+
+<div style="display: flex;">
+<div class="sidenav">
+	<a href="index.html">Басты</a>
+	<button class="dropdown-btn">Көрсеткіштер<i class="fa fa-caret-down"></i></button>
+  <div class="dropdown-container">
+    <a href="ubt.html">ҰБТ</a>
+    <a href="ojsb.html">ОЖСБ</a>
+    <a href="olimpiada.html">Олимпиада, жарыстар</a>
+    <a href="pisa_icils.html">PISA, ICILS, TIMSS</a>
+  </div>
+  <button class="dropdown-btn">Ата-аналарға <i class="fa fa-caret-down"></i></button>
+  <div class="dropdown-container">
+    <a href="ata_anamen_jumys.html">Ата-аналармен атқарылып жатқан тәрбие жұмыстары</a>
+  </div>
+</div>
+
+<div style="width: 85%; margin: auto;">
+<h1 style="text-align: center;">Oқу жетістіктерін сырттай бағалау (ОЖСБ)</h1>
+<h2 style="text-align: center;">2018-2019 оқу жылы</h2>
+2018-2019 оқу жылында оқу жетістіктерін сырттай бағалау (бұдан әрі - ОЖСБ) рәсіміне 107 мектеп қатысты. Оның ішінде 1 мектебі электронды (компьютерлік әдіспен) онлайн, 94 мектеп қағаз түрінде, 12 мектеп қағаз және компьютер түрінде өтті.
+2019 жылдың 17-26 сәуір аралығында 4 сынып бойынша 6347, 9 сынып бойынша 5887 және 11 сынып бойынша 2086 оқушы ОЖСБ рәсімін тапсырды.
+4-сыныптар бойынша орта балы – 19,63 (2018-16,94), 9-сыныптар бойынша орта балы – 39,07 (2018-31,09), 11-сыныптар бойынша орта балы – 60,55 (2018 ж – 50,12).
+<img src="../../images/1234.png" style="margin: auto;">
+</div>
+
+</div>
+<div class="footer">
+	<div class="f1">
+		<h2>Біздің  мекенжайымыз</h2>
+		<ul>
+			<li><i class='fas fa-map-marker-alt'></i>	Түркістан қаласы</li>
+			<li><i class='fas fa-envelope'></i><a href="#">	turkistan.obl.aadb@gmail.com</a></li>
+		</ul>
+	</div>
+	<div class="f2">
+		<h2>Call - орталық</h2>
+		<ul>
+			<li><i class='fas fa-phone'></i> + 7 10 00</li>
+			<li><i class='fas fa-mobile-alt' style='color: lightgrey'></i> +7 707 684 71 00</li>
+			<li><i class='fas fa-mobile-alt' style='color: lightgrey'></i> +7 776 484 71 00</li>
+			<li><i class='fas fa-mobile-alt' style='color: lightgrey'></i> +7 708 004 71 00</li>
+		</ul>
+	</div>
+	<div class="f3">
+		<h2>Әлеуметтік  желі</h2>
+		<a href="https://facebook.com/turkistan.obl.aadb" ><i class='fab fa-facebook-square' style='font-size:36px; padding-right: 10px;'></i></a>
+		<a href="https://instagram.com/turkistan.obl.bilim.basqarmasy" ><i class='fab fa-instagram' style='font-size:36px'></i></a>
+	</div>
+</div>
+<script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+
+
+var dropdown = document.getElementsByClassName("dropdown-btn");
+var i;
+
+for (i = 0; i < dropdown.length; i++) {
+  dropdown[i].addEventListener("click", function() {
+  this.classList.toggle("active");
+  var dropdownContent = this.nextElementSibling;
+  if (dropdownContent.style.display === "block") {
+  dropdownContent.style.display = "none";
+  } else {
+  dropdownContent.style.display = "block";
+  }
+  });
+}
+</script>
+</body>
+</html>
